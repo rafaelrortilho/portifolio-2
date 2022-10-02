@@ -1,0 +1,33 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 200px;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::before {
+content: " ";
+display: block;
+width: 130px;
+height: 100px;
+background: url(../img/linhas.svg) no-repeat center;
+position: absolute;
+top: -15px;
+left: -40px;
+z-index: -1;
+}
+
+.introducao p {
+  font-size: 24px;
+  color: #525252;
+}

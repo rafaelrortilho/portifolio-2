@@ -1,0 +1,142 @@
+.formacao {
+  background: #141414;
+  color: #ffffff;
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 100px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.container::after {
+content: " ";
+display: block;
+width: 130px;
+height: 100px;
+background: url(/assets/img/linhas.svg) no-repeat center;
+position: absolute;
+bottom: -50px;
+}
+
+.subtitulo {
+  color: #000000;
+  max-width: 40ch;
+  font-size: 128px;
+}
+
+.formacao-descricao {
+  font-size: 24px;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3a3;
+}
+
+.formacao-descricao strong {
+  color: #ffffffff;
+}
+
+.formacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.faculdade {
+  flex: 1;
+  padding: 20px;
+  background: #000000;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tipo-de-faculdade {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #b629f8 0%, #800add 100%);
+  position: absolute;
+  left: -24px;
+}
+
+.faculdade-nome {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.curso {
+  margin-bottom: 60px;
+}
+
+.capacitacoes h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.capacitacoes h3::before {
+  display: block;
+  content: " ";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+
+.linguas h3 {
+  margin-top: 60px ;
+}
+
+.expecialidades h3::before {
+  background: url(/assets/img/livro.svg) no-repeat center center;
+  left: -36px;
+  top: -4px;
+}
+
+.linguas h3::before {
+  background: url(/assets/img/decoraçãor.svg) no-repeat center center;
+  left: -36px;
+}
+
+.capacitacoes li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.capacitacoes span {
+  color: #8f8f8f;
+}
+
+.expecialidades li {
+  display: flex;
+  justify-content: space-between;
+}
